@@ -30,6 +30,13 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Image.network('https://cpsu-test-api.herokuapp.com/images/election.jpg'),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Text('ผลโหวต', style: Theme.of(context).textTheme.bodySmall),
+            ),
+          ),
           Expanded(
             child: Stack(
               children: [
@@ -38,6 +45,18 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          const Padding(
+            padding: EdgeInsets.only(top: 1.0, bottom: 48.0),
+            child: Text('1.บุคคลใดที่คุณจะสนับสนุนให้เป็นนายกรัฐมนตรีในการเลือกตั้งครั้งนี้', ),
+          ),
+        Padding(
+    padding: EdgeInsets.only(top: 100.0, bottom: 48.0),
+        child: Text('2.ในการเลือกตั้ง ส.ส. แบบแบ่งเขต คุณจะเลือกผู้สมัครจากพรรคการเมืองใด', ),
+      ),
+           Padding(
+            padding: EdgeInsets.only(top: 100.0, bottom: 48.0),
+            child: Text('3.ในการเลือกตั้ง ส.ส. แบบบัญชีรายชื่อคุณจะเลือกผู้สมัครจากพรรคการเมืองใด', ),
+          )
         ],
       ),
     );

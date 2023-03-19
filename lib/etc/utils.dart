@@ -20,8 +20,9 @@ Future<void> showOkDialog(BuildContext context, String title, String content) as
             onPressed: () {
               Navigator.of(context).pop();
             },
-          ),
+          )
         ],
+
       );
     },
   );
